@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .parent{
+            display: none;
+        }
+        .btn{
+            background-color: aqua;
+            width: 20em;
+            height: 3em;
+            cursor: pointer;
+        }
+
+        .drpdown{
+            width: 16.5em;
+            background-color: yellow;
+            display: none;
+            position: absolute;
+        }
+        .drpdown a{
+            display: block;
+            text-align: center;
+            text-decoration: none;
+
+        }
+
+        .parent:hover .drpdown{
+            display: block;
+            
+        }
+
+        .navbar{
+            color:black;
+            width: 100%;
+            height: auto;
+            text-align: center;
+            background-color: aquamarine;
+        }
+
+        .listele li{
+            cursor: pointer;
+            display: inline;
+            padding:3px 40px 3px 40px;
+            font-size: 23px;
+        }
+        .listele li:hover{
+            background-color: violet;
+        }
+
+        @media only screen and (max-width:583px){
+            .navbar{
+                display: none;
+            }
+            .parent{
+                display: block;
+            }
+
+        }
+
+        .liTems{
+            text-align: center;
+            margin-left: 20em;
+            background-color: aqua;
+            width: 7%;
+            display: none;
+            position: absolute;
+
+
+        }
+        .liTems a{
+            display: block;
+            padding-top: 2px;
+            padding-bottom: 6px;
+            text-decoration: none;
+            border: 1px solid white;
+        }
+
+       .butn button{
+        background-color: aquamarine;
+        border: none;
+       }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <button class="btn">Home</button>
+        <div class="drpdown">
+            <a href="">About</a>
+            <a href="">contact</a>
+            <a href="">Logout</a>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <ul class="listele">
+          <span class="butn">
+           <button> <li id="home">Home</li> </button>
+        </span>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Logout</li>
+        </ul>
+    </div>
+         <div class="liTems">
+            <a href="">target1</a>
+            <a href="">target2</a>
+            <a href="">target3</a>
+         </div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur in corporis mollitia assumenda magnam quo voluptate consequuntur excepturi, non earum itaque porro officiis. Itaque ex voluptatem excepturi debitis doloribus cumque labore. Modi deserunt eveniet numquam cupiditate iusto suscipit officia. Facilis eveniet beatae nihil veniam deleniti debitis tempora ab, repudiandae, vitae cum illo quasi iste dolor blanditiis! Corporis minima atque nostrum distinctio inventore quod rem cumque ad a similique eaque minus culpa amet corrupti nulla enim laborum, adipisci sint ex maxime accusamus voluptas ipsum quaerat deleniti! Sapiente modi velit fugiat neque unde tempora, asperiores ab omnis cumque voluptatem? Illo alias quis maxime officiis dolor, nobis beatae saepe sunt vel dicta voluptate quae cum excepturi ratione quia, perferendis harum quas officia. Quo sit enim voluptatibus, voluptate consectetur iste natus saepe deserunt deleniti accusantium voluptatem vel corporis quisquam nobis laboriosam ab necessitatibus qui. Dolores eius velit ratione suscipit necessitatibus, provident alias minima fugiat. Soluta sit omnis velit molestias deserunt eligendi harum labore sint, ipsum eum odio vitae aliquam cum eaque praesentium hic quos maxime libero beatae delectus incidunt eius quisquam. Deserunt, inventore illo! Eos quasi doloribus tempore quis labore soluta illo! Quidem optio facilis expedita beatae illo non esse numquam dolore nam eveniet.</p>
+</body>
+</html>
